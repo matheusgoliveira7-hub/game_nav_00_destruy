@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>STAR MANIA — Shmup 8-bit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="hud-top">
+    <div class="hud-left">SCORE<br><span id="score">000000</span></div>
+    <div class="hud-center">HI<br><span id="hi">000000</span></div>
+    <div class="hud-right">FASE <span id="level">1</span> · VIDAS <span id="lives">♥♥♥</span></div>
+  </div>
+
+  <div id="canvas-holder">
+    <canvas id="game" width="480" height="640"></canvas>
+    <div id="overlay">
+      <h1 id="ov-title">STAR MANIA</h1>
+      <p id="ov-sub">inspirado em Megamania</p>
+      <p id="ov-msg">◀ ▶ / A D move · ESPAÇO atira<br>Toque e arraste no mobile</p>
+      <button id="btn-start">▶ INICIAR</button>
+      <p class="hint">Destrua a onda completa para recarregar energia.<br>Energia zerada = perde 1 vida.</p>
+    </div>
+  </div>
+
+  <div id="hud-bottom">
+    <div id="energy-label">ENERGIA</div>
+    <div id="energy-track"><div id="energy-fill"></div></div>
+  </div>
+
+  <div id="touch-controls">
+    <button id="t-left" aria-label="Esquerda">◀</button>
+    <button id="t-fire" aria-label="Atirar">●</button>
+    <button id="t-right" aria-label="Direita">▶</button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
